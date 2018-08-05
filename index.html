@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>git-repo-updater</title>
+</head>
+<body>
+    <div id="main">
+        <h1>Git Repo Updater!</h1>
+        <div>
+            <h2>Choose local folder:</h2>
+            <input id="local-path"></input>
+            <button id="directory">Choose</button>
+        </div>
+
+        <div>
+            <h3>Actions:</h3>
+            <form>
+                <div>
+                    <input type="radio" id="clone-rd" name="option" checked/>
+                    <label for="clone-rd">Clone</label>
+                </div>
+    
+                <div>
+                    <input type="radio" id="update-rd" name="option" />
+                    <label for="update-rd">Update</label>
+                </div>
+            </form>
+        </div>
+
+        <div id="clone-container">
+            <h3>Git Repo URL:</h3>
+            <input id="git_url" type="text">
+            <button id="clone">Clone!</button>
+        </div>
+
+        <div id="update-container" hidden>
+            <button id="update">Update!</button>
+        </div>
+       
+    </div>
+    <script>
+            require('./renderer.js')
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "git-repo-updater",
+  "version": "1.0.0",
+  "main": "main.js",
+  "repository": "https://github.com/hmarsolla/git-repo-updater.git",
+  "author": "hmarsolla <hmarsolla@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^2.0.6",
+    "simple-git": "^1.96.0"
+  }
+}
