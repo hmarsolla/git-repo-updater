@@ -1,0 +1,59 @@
+html {
+    font-size: 78.5%;
+}
+
+body {
+    background-color: #FFE370;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, span {
+    color: #E86F0C;
+}
+
+#main {
+    align-items: center;
+    margin: 0 auto;
+    max-width: 60rem;
+    padding: 0;
+    width: 50%;
+}
+
+.container .field {
+    display: flex;
+    justify-content: center;
+}
+
+.container .field input{
+    margin: 0 1.6rem;
+}
+
+.container .field h3{
+    margin: 0 1.6rem;
+}
+
+.container #clone, .container #update {
+    height: 2.5rem;
+    margin: 1.6rem;
+    width: 10rem;
+}
+
+.container .main-bt, .ct-title {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #E86F0C;
+    border: none;
+    color: white;
+}
+
+#actions {
+    display: flex;
+    justify-content: center;
+}
+
+#actions label{
+    margin: 0 1.6rem 0 0;
+}
