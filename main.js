@@ -20,12 +20,22 @@ function selectDirectory() {
     })
 };
 
-function cloneRepo(folder_path, git_url) {
-    git.clone(git_url, folder_path);
+async function cloneRepo(folder_path, git_url) {
+    try{
+        await git().cwd(folder_path).clone(git_url);
+        dialog.showMessageBox(mainWindow, {message: "Git Repository Cloned Successfully"})
+    }catch(e){
+        dialog.showErrorBox("Error", e.toString())
+    };
 };
 
-function updateRepo(folder_path) {
-    git(folder_path).pull();
+async function updateRepo(folder_path) {
+    try{
+        await git(folder_path).pull();
+        dialog.showMessageBox(mainWindow, {message: "Git Repository Updated Successfully"})
+    }catch(e){
+        dialog.showErrorBox("Error", e.toString())
+    };
 };
 
 //events
